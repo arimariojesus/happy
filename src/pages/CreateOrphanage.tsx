@@ -70,7 +70,7 @@ export default function CreateOrphanage() {
 
     await api.post('orphanages', data);
 
-    alert('Cadastro realizado com sucesso');
+    // alert('Cadastro realizado com sucesso');
 
     history.push('/app');
   }
@@ -85,7 +85,7 @@ export default function CreateOrphanage() {
             <legend>Dados</legend>
 
             <Map 
-              center={[-27.2092052,-49.6401092]} 
+              center={[-12.786504, -38.402100]} 
               style={{ width: '100%', height: 280 }}
               zoom={15}
               onclick={handleMapClick}

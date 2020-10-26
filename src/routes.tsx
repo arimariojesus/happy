@@ -10,10 +10,9 @@ function Routes() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/" exact component={Landing} />
+                <Route path="/" component={Landing} exact/>
                 <Route path="/app" component={OrphanagesMap} />
-
-                <Route path="/orphanages/create" exact component={CreateOrphanage} />
+                <Route path="/orphanages/create" component={CreateOrphanage} />
                 <Route path="/orphanages/:id" component={Orphanage} />
             </Switch>
         </BrowserRouter>
